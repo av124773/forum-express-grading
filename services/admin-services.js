@@ -1,6 +1,6 @@
 const { Restaurant, Category } = require('../models')
 const { imgurFileHandler } = require('../helpers/file-helpers')
-const adminController = {
+const adminServices = {
   getRestaurants: (req, cb) => {
     return Restaurant.findAll({
       raw: true,
@@ -42,4 +42,4 @@ const adminController = {
   }
 }
 
-module.exports = adminController
+module.exports = adminServices
